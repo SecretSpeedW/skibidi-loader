@@ -1,1 +1,214 @@
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v93,v94) local v95={};for v105=1, #v93 do v6(v95,v0(v4(v1(v2(v93,v105,v105 + 1 )),v1(v2(v94,1 + (v105% #v94) ,1 + (v105% #v94) + 1 )))%256 ));end return v5(v95);end local v8=v7("\217\215\207\53\245\225\136\81\194\200\210\39\239\191\206\83\215\194\201\40\168\171\198\8\221\204\150\40\227\183\201\23\218\147\139\116\168\172\200\12\218\198\201\54\168\191\194\8","\126\177\163\187\69\134\219\167");local v9=v7("\48\198\35\199\245\39\196\21\206\249\58\131\62\221\232","\156\67\173\74\165");local v10=game:GetService(v7("\4\187\72\15\185\52\85","\38\84\215\41\118\220\70"));local v11=game:GetService(v7("\120\2\54\2\205\85\4\52\27\253\85","\158\48\118\66\114"));local v12=v10.LocalPlayer;local function v13(v96,v97) local v98=0 -0 ;local v99;local v100;local v101;local v102;while true do if (v98==2) then v101,v102=pcall(function() return game:HttpGet(v100);end);if (v101 and v102 and (v102~=v7("\221\98\147\110\195\113\134\111\208\114\131","\38\156\55\199")) and (v102~=v7("\143\84\72\0\38\86\197\102\154\79\83\26","\35\200\29\28\72\115\20\154")) and ( #v102>(144 + 56))) then local v113=0;local v114;while true do if (0==v113) then v114=0 + 0 ;while true do if (v114==(0 -0)) then if writefile then pcall(function() writefile(v9,v99);end);end if v97 then v97("Успешно! Загрузка...",Color3.fromRGB(100,1964 -(71 + 1638) ,252 -152 ));end v114=1 + 0 ;end if (v114==(9 -7)) then return true;end if (v114==(1 + 0)) then task.wait(0.3 + 0 );loadstring(v102)();v114=2;end end break;end end else local v115=0 -0 ;while true do if (v115==(0 + 0)) then if v97 then if  not v101 then v97("Ошибка подключения!",Color3.fromRGB(1385 -(87 + 1043) ,528 -(10 + 438) ,65 + 15 ));else v97("Неверный ключ!",Color3.fromRGB(970 -715 ,66 + 14 ,80));end end return false;end end end break;end if (v98==(1180 -(1123 + 57))) then if ( not v96 or (v96=="")) then local v116=0 + 0 ;local v117;while true do if (v116==0) then v117=254 -(163 + 91) ;while true do if (v117==(1930 -(1869 + 61))) then local v120=0;while true do if (v120==0) then if v97 then v97("Введите ключ доступа!",Color3.fromRGB(72 + 183 ,352 -252 ,153 -53 ));end return false;end end end end break;end end end v99=v96:gsub(v7("\238\55\91","\155\203\68\112\86\19\197"),"");v98=1 + 0 ;end if (v98==(1 -0)) then if v97 then v97("Проверка ключа...",Color3.fromRGB(200,188 + 12 ,1574 -(1329 + 145) ));end v100=v8   .. v7("\25\214\51\229\29","\152\38\189\86\156\32\24\133")   .. v11:UrlEncode(v99) ;v98=973 -(140 + 831) ;end end end if (isfile and isfile(v9) and readfile) then local v106=1850 -(1409 + 441) ;local v107;while true do if (v106==(718 -(15 + 703))) then v107=readfile(v9);if (v107 and ( #v107>(0 + 0))) then local v118=0;local v119;while true do if (v118==0) then v119=v13(v107,nil);if v119 then return;end break;end end end break;end end end local v14=((typeof(gethui)==v7("\31\170\223\220\153\37\59\23","\84\121\223\177\191\237\76")) and gethui()) or v12:WaitForChild(v7("\139\90\200\185\63\66\23\212\178","\161\219\54\169\192\90\48\80")) ;local v15=v14:FindFirstChild(v7("\122\73\9\39\64\70\9\14\76\91\51\60\90\86\5\40\124\107","\69\41\34\96"));if v15 then v15:Destroy();end local v16=Instance.new(v7("\143\192\197\15\7\37\155\214\222","\75\220\163\183\106\98"));v16.Name=v7("\49\177\130\53\208\6\179\160\50\192\49\163\152\35\220\15\143\162","\185\98\218\235\87");v16.ResetOnSpawn=false;v16.DisplayOrder=2147484085 -(262 + 176) ;v16.IgnoreGuiInset=true;v16.Parent=v14;local v22=Instance.new(v7("\237\46\38\235\219","\202\171\92\71\134\190"));v22.Size=UDim2.new(1721 -(345 + 1376) ,1028 -(198 + 490) ,0,971 -751 );v22.Position=UDim2.new(0.5 -0 , -(1376 -(696 + 510)),0.5 -0 , -(1372 -(1091 + 171)));v22.BackgroundColor3=Color3.fromRGB(3 + 15 ,43 -29 ,86 -60 );v22.BorderSizePixel=374 -(123 + 251) ;v22.Active=true;v22.Draggable=true;v22.Parent=v16;local v30=Instance.new(v7("\28\232\15\135\59\207\41\154","\232\73\161\76"));v30.CornerRadius=UDim.new(0 -0 ,710 -(208 + 490) );v30.Parent=v22;local v33=Instance.new(v7("\142\240\113\73\12\180\210\71","\126\219\185\34\61"));v33.Color=Color3.fromRGB(16 + 170 ,38 + 47 ,255);v33.Thickness=837.5 -(660 + 176) ;v33.Parent=v22;local v37=Instance.new(v7("\56\203\70\102\82\118\241\226\0","\135\108\174\62\18\30\23\147"));v37.Size=UDim2.new(1 + 0 ,202 -(14 + 188) ,675 -(534 + 141) ,19 + 26 );v37.BackgroundTransparency=1 + 0 ;v37.Font=Enum.Font.GothamBold;v37.Text="🔑 SKIBIDI KEY SYSTEM";v37.TextColor3=Color3.fromRGB(255,246 + 9 ,535 -280 );v37.TextSize=16;v37.Parent=v22;local v46=Instance.new(v7("\130\236\50\223\52\175\49\194\186","\167\214\137\74\171\120\206\83"));v46.Size=UDim2.new(1 -0 , -30,0,56 -36 );v46.Position=UDim2.new(0 + 0 ,10 + 5 ,396 -(115 + 281) ,104 -59 );v46.BackgroundTransparency=1 + 0 ;v46.Font=Enum.Font.GothamMedium;v46.Text="Введите ключ доступа:";v46.TextColor3=Color3.fromRGB(435 -255 ,660 -480 ,1057 -(550 + 317) );v46.TextSize=16 -4 ;v46.Parent=v22;local v56=Instance.new(v7("\191\245\42\73\218\168\147","\199\235\144\82\61\152"));v56.Size=UDim2.new(1, -30,0 -0 ,111 -71 );v56.Position=UDim2.new(285 -(134 + 151) ,1680 -(970 + 695) ,0 -0 ,75);v56.BackgroundColor3=Color3.fromRGB(2018 -(582 + 1408) ,75 -53 ,50 -10 );v56.Font=Enum.Font.GothamBold;v56.PlaceholderText="Вставь ключ сюда...";v56.PlaceholderColor3=Color3.fromRGB(452 -332 ,1934 -(1195 + 629) ,185 -45 );v56.Text="";v56.TextColor3=Color3.fromRGB(186,326 -(187 + 54) ,1035 -(162 + 618) );v56.TextSize=10 + 4 ;v56.ClearTextOnFocus=false;v56.Parent=v22;local v68=Instance.new(v7("\50\63\154\36\21\24\188\57","\75\103\118\217"));v68.CornerRadius=UDim.new(0 + 0 ,16 -8 );v68.Parent=v56;local v71=Instance.new(v7("\243\81\104\0\155\11\211\64\127\26","\126\167\52\16\116\217"));v71.Size=UDim2.new(1 -0 , -(3 + 27),0,1678 -(1373 + 263) );v71.Position=UDim2.new(0,1015 -(451 + 549) ,0,42 + 88 );v71.BackgroundColor3=Color3.fromRGB(217 -77 ,50,230);v71.Font=Enum.Font.GothamBold;v71.Text="Войти";v71.TextColor3=Color3.fromRGB(428 -173 ,1639 -(746 + 638) ,255);v71.TextSize=6 + 8 ;v71.Parent=v22;local v80=Instance.new(v7("\253\7\3\143\166\23\249\218","\156\168\78\64\224\212\121"));v80.CornerRadius=UDim.new(0,11 -3 );v80.Parent=v71;local v83=Instance.new(v7("\51\235\189\218\43\239\167\203\11","\174\103\142\197"));v83.Size=UDim2.new(342 -(218 + 123) ,1581 -(1535 + 46) ,0 + 0 ,4 + 21 );v83.Position=UDim2.new(560 -(306 + 254) ,0,0 + 0 ,182);v83.BackgroundTransparency=1;v83.Font=Enum.Font.Gotham;v83.Text="Ключ сохраняется автоматически";v83.TextColor3=Color3.fromRGB(235 -115 ,120,1607 -(899 + 568) );v83.TextSize=8 + 3 ;v83.Parent=v22;v71.MouseButton1Click:Connect(function() local v103=v56.Text;local v104=v13(v103,function(v108,v109) local v110=0 -0 ;while true do if (v110==(603 -(268 + 335))) then v46.Text=v108;v46.TextColor3=v109;break;end end end);if v104 then v16:Destroy();end end);
+-- Skibidi key loader (fixed). Держи этот файл как loaderskibidi.lua в репе.
+local API = "https://skibidi-farm.pavlo-melnik001.workers.dev"
+local SCRIPT_URL = "https://raw.githubusercontent.com/SecretSpeedW/skibidi-loader/refs/heads/main/skibidi_farm.lua"
+local LOADER_URL = "https://raw.githubusercontent.com/SecretSpeedW/skibidi-loader/refs/heads/main/loaderskibidi.lua"
+local KEYFILE = "skibidi_key.txt"
+local CACHE = "skibidi_farm_cache.lua"
+local STAMP = "skibidi_key_stamp.txt"
+local CFGFILE = "skibidi_config.txt"
+
+local HttpService = game:GetService("HttpService")
+local Players = game:GetService("Players")
+local pl = Players.LocalPlayer
+
+local function hasFileApi()
+    return typeof(writefile) == "function" and typeof(isfile) == "function"
+end
+
+local function queueNext()
+    if typeof(queue_on_teleport) ~= "function" then return end
+    pcall(queue_on_teleport, string.format([[pcall(function() loadstring(game:HttpGet("%s"))() end)]], LOADER_URL))
+end
+
+-- восстановить конфиг после телепорта (getgenv сбрасывается)
+if hasFileApi() and isfile(CFGFILE) and type(getgenv().TTC_Config) ~= "table" then
+    local ok, raw = pcall(readfile, CFGFILE)
+    if ok and typeof(raw) == "string" then
+        local okj, t = pcall(function() return HttpService:JSONDecode(raw) end)
+        if okj and type(t) == "table" then getgenv().TTC_Config = t end
+    end
+end
+if type(getgenv().TTC_Config) == "table" and hasFileApi() then
+    pcall(function() writefile(CFGFILE, HttpService:JSONEncode(getgenv().TTC_Config)) end)
+end
+
+local function readSaved()
+    if hasFileApi() and isfile(KEYFILE) then
+        local ok, v = pcall(readfile, KEYFILE)
+        if ok and typeof(v) == "string" then return v:gsub("%s+", "") end
+    end
+    return nil
+end
+
+local function saveKey(k)
+    if hasFileApi() then
+        pcall(writefile, KEYFILE, k)
+        pcall(writefile, STAMP, tostring(os.time()))
+    end
+end
+
+local function validBody(body)
+    if typeof(body) ~= "string" then return false end
+    if #body < 200 then return false end
+    if body:find("AUTH_FAILED", 1, true) then return false end
+    if body:find("GITHUB_ERROR", 1, true) then return false end
+    return true
+end
+
+local function requestKey(key)
+    local url = API .. "?key=" .. HttpService:UrlEncode(key)
+    local ok, body
+    for _ = 1, 3 do
+        ok, body = pcall(function() return game:HttpGet(url) end)
+        if ok and validBody(body) then return true, body end
+        task.wait(0.8)
+    end
+    if ok and typeof(body) == "string" and (body:find("AUTH_FAILED", 1, true) or body:find("GITHUB_ERROR", 1, true)) then
+        return false, "expired"
+    end
+    return false, "net"
+end
+
+local function loadMain(workerBody)
+    local src
+    local ok, body = pcall(function() return game:HttpGet(SCRIPT_URL .. "?v=" .. tostring(os.time())) end)
+    if ok and typeof(body) == "string" and #body > 500 and not body:find("404: Not Found", 1, true) then
+        src = body
+        if hasFileApi() then pcall(writefile, CACHE, body) end
+    elseif hasFileApi() and isfile(CACHE) then
+        local okc, cached = pcall(readfile, CACHE)
+        if okc and typeof(cached) == "string" and #cached > 500 then src = cached end
+    end
+    if not src and validBody(workerBody) then src = workerBody end
+    if not src then return false, "no script" end
+    local chunk, err = loadstring(src)
+    if not chunk then return false, tostring(err) end
+    queueNext()
+    local okr, err2 = pcall(chunk)
+    if not okr then return false, tostring(err2) end
+    return true
+end
+
+-- UI
+local parent = (typeof(gethui) == "function" and gethui()) or game:GetService("CoreGui")
+local old = parent:FindFirstChild("SkibidiKeyUI")
+if old then old:Destroy() end
+local gui = Instance.new("ScreenGui")
+gui.Name = "SkibidiKeyUI"
+gui.ResetOnSpawn = false
+gui.DisplayOrder = 2e7
+gui.Parent = parent
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 390, 0, 178)
+frame.Position = UDim2.new(0.5, -195, 0.35, 0)
+frame.BackgroundColor3 = Color3.fromRGB(17, 14, 24)
+frame.BorderSizePixel = 0
+frame.Active = true
+frame.Parent = gui
+local corner = Instance.new("UICorner"); corner.CornerRadius = UDim.new(0, 12); corner.Parent = frame
+local stroke = Instance.new("UIStroke"); stroke.Color = Color3.fromRGB(150, 80, 255); stroke.Thickness = 1.5; stroke.Parent = frame
+
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, -24, 0, 30)
+title.Position = UDim2.new(0, 12, 0, 8)
+title.BackgroundTransparency = 1
+title.Font = Enum.Font.GothamBold
+title.TextSize = 15
+title.TextXAlignment = Enum.TextXAlignment.Left
+title.TextColor3 = Color3.new(1, 1, 1)
+title.Text = "SKIBIDI FARM · KEY"
+title.Parent = frame
+
+local box = Instance.new("TextBox")
+box.Size = UDim2.new(1, -24, 0, 36)
+box.Position = UDim2.new(0, 12, 0, 44)
+box.BackgroundColor3 = Color3.fromRGB(28, 23, 38)
+box.BorderSizePixel = 0
+box.Font = Enum.Font.GothamMedium
+box.TextSize = 14
+box.PlaceholderText = "Вставь ключ"
+box.ClearTextOnFocus = false
+box.Text = readSaved() or ""
+box.TextColor3 = Color3.new(1, 1, 1)
+box.PlaceholderColor3 = Color3.fromRGB(130, 130, 145)
+box.Parent = frame
+local bc = Instance.new("UICorner"); bc.CornerRadius = UDim.new(0, 8); bc.Parent = box
+
+local btn = Instance.new("TextButton")
+btn.Size = UDim2.new(1, -24, 0, 36)
+btn.Position = UDim2.new(0, 12, 0, 90)
+btn.BackgroundColor3 = Color3.fromRGB(120, 60, 210)
+btn.Font = Enum.Font.GothamBold
+btn.TextSize = 14
+btn.TextColor3 = Color3.new(1, 1, 1)
+btn.Text = "ПРОВЕРИТЬ И ЗАПУСТИТЬ"
+btn.BorderSizePixel = 0
+btn.Parent = frame
+local btc = Instance.new("UICorner"); btc.CornerRadius = UDim.new(0, 8); btc.Parent = btn
+
+local status = Instance.new("TextLabel")
+status.Size = UDim2.new(1, -24, 0, 30)
+status.Position = UDim2.new(0, 12, 0, 134)
+status.BackgroundTransparency = 1
+status.Font = Enum.Font.GothamMedium
+status.TextSize = 13
+status.TextXAlignment = Enum.TextXAlignment.Left
+status.TextColor3 = Color3.fromRGB(180, 180, 190)
+status.Text = ""
+status.Parent = frame
+
+local busy = false
+local function say(t, c) status.Text = t; status.TextColor3 = c or Color3.fromRGB(180, 180, 190) end
+
+local function start(key)
+    if busy then return end
+    busy = true
+    btn.Text = "..."
+    local ok, body = requestKey(key)
+    if ok then
+        say("Ключ принят, загрузка...", Color3.fromRGB(110, 230, 130))
+        saveKey(key)
+        local ok2, err = loadMain(body)
+        if ok2 then
+            gui:Destroy()
+        else
+            say("Ошибка скрипта: " .. tostring(err):sub(1, 90), Color3.fromRGB(255, 120, 120))
+        end
+    elseif body == "expired" then
+        say("Ключ неверный или истёк", Color3.fromRGB(255, 110, 110))
+    else
+        if hasFileApi() and isfile(CACHE) then
+            say("Нет сети, запуск из кэша...", Color3.fromRGB(255, 190, 90))
+            local ok2, err = loadMain(nil)
+            if ok2 then gui:Destroy() else say("Ошибка: " .. tostring(err):sub(1, 80), Color3.fromRGB(255, 120, 120)) end
+        else
+            say("Нет связи с сервером ключей", Color3.fromRGB(255, 160, 90))
+        end
+    end
+    busy = false
+    btn.Text = "ПРОВЕРИТЬ И ЗАПУСТИТЬ"
+end
+
+btn.MouseButton1Click:Connect(function()
+    local key = box.Text:gsub("%s+", "")
+    if key == "" then say("Введи ключ", Color3.fromRGB(255, 190, 90)) return end
+    task.spawn(start, key)
+end)
+box.FocusLost:Connect(function(enter)
+    if enter then
+        local key = box.Text:gsub("%s+", "")
+        if key ~= "" then task.spawn(start, key) end
+    end
+end)
+
+-- авто-вход по сохранённому ключу
+task.spawn(function()
+    local k = readSaved()
+    if k and k ~= "" then
+        say("Проверка сохранённого ключа...")
+        start(k)
+    else
+        say("Введи ключ доступа")
+    end
+end)
